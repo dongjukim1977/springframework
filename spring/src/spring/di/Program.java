@@ -26,7 +26,6 @@ public class Program {
 		//for(Exam e : exams) {
 		//	System.out.println(e);
 		//}
-
 	}
 
 }
