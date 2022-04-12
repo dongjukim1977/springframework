@@ -19,7 +19,6 @@ public class Program {
 		ExamConsole console = context.getBean(ExamConsole.class);
 		console.print();
 		
-		
 		//List<Exam> exams = new ArrayList<>();
 		// setting.xml 에서 exams 객체 생성
 		//exams.add(new NewlecExam(1,1,1,1));
