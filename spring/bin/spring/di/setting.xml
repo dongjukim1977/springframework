@@ -3,6 +3,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<<<<<<< HEAD
 	<!-- Exam exam = new NewlecExam(); -->
 	<bean id="exam" class="spring.di.entity.NewlecExam" />
 	
@@ -17,4 +18,13 @@
 	
 	
 
+=======
+    <!-- Exam exam = new NewlecExam(); -->
+    <bean id="exam" class="spring.di.entity.NewlecExam" />
+    <!-- ExamConsole console = new GirdExamConsole(); -->
+    <bean id="console" class="spring.di.ui.GirdExamConsole">
+        <!-- console.setExam(exam); -->
+        <property name="exam" ref="exam"/>
+    </bean>
+>>>>>>> branch 'master' of https://github.com/dongjukim1977/springframework.git
 </beans>

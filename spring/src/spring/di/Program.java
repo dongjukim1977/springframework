@@ -3,6 +3,7 @@ package spring.di;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+<<<<<<< HEAD
 import spring.di.ui.ExamConsole;
 
 public class Program {
@@ -31,6 +32,31 @@ public class Program {
 		//context.getBean("console");
 		
 		console.print();
+=======
+import spring.di.entity.Exam;
+import spring.di.entity.NewlecExam;
+import spring.di.ui.ExamConsole;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context = new ClassPathXmlApplicationContext("spring/di/setting.xml");
+		
+		Exam exam = context.getBean(Exam.class);
+		System.out.println(exam.toString());
+		
+		ExamConsole console = context.getBean(ExamConsole.class);
+		console.print();
+		
+		//List<Exam> exams = new ArrayList<>();
+		// setting.xml 에서 exams 객체 생성
+		//exams.add(new NewlecExam(1,1,1,1));
+		
+		//for(Exam e : exams) {
+		//	System.out.println(e);
+		//}
+>>>>>>> branch 'master' of https://github.com/dongjukim1977/springframework.git
 	}
 
 }
