@@ -124,8 +124,6 @@
 									<td colspan="3"  class="text-align-left text-indent">다음글이 없습니다.</td>
 								</tr>
 								
-									
-								
 								
 								<tr>
 									<th>이전글</th>
