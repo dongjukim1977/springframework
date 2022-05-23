@@ -1,6 +1,25 @@
 package spring.di.entity;
 
 public class NewlecExam implements Exam {
+<<<<<<< HEAD
+	
+	private int kor;
+	private int eng;
+	private int math;
+	private int com;
+
+	@Override
+	public int total() {
+		// TODO Auto-generated method stub
+		return kor + eng + math + com;
+	}
+
+	@Override
+	public float avg() {
+		// TODO Auto-generated method stub
+		return total() / 4.0f;
+	}
+=======
 
 	private int kor;
 	private int eng;
@@ -72,5 +91,6 @@ public class NewlecExam implements Exam {
 	}
 	
 	
+>>>>>>> branch 'master' of https://github.com/dongjukim1977/springframework.git
 
 }
